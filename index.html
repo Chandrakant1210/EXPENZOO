@@ -229,12 +229,91 @@
     </section>
 
 
+    <!-- CTA + FOOTER FOR EXPENZO -->
+    <section class="expenzo-cta">
+        <div class="cta-inner container-lg">
+            <div class="cta-left">
+                <h2>Take Control of Your Spending,<br> One Smart Step at a Time</h2>
+                <p class="cta-desc">Expenzo helps you track expenses, get AI-driven recommendations, and build a financial plan that works for you.</p>
+
+                <div class="cta-actions">
+                    <a href="#signup" class="btn btn-ghost">Schedule a Consultation</a>
+                    <a href="#start" class="btn btn-solid">Start Your Journey</a>
+                </div>
+            </div>
+
+            <div class="cta-right" aria-hidden="true">
+                <!-- Replace with a wide image of your choice -->
+                <img src="about-img1.webp" alt="" class="cta-image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="expenzo-footer">
+        <div class="container-lg footer-inner">
+            <div class="footer-brand">
+                <div class="logo">Expenzo</div>
+                <p>Expenzo uses AI to help you manage expenses, optimize spending and plan a confident financial future.</p>
+
+                <div class="socials">
+                    <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">AI Chat</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Expense Tracker</a></li>
+                    <li><a href="#">Budget Planner</a></li>
+                    <li><a href="#">Reports & Insights</a></li>
+                    <li><a href="#">Smart Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i class="fa-regular fa-phone"></i> <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:hello@expenzo.com">hello@expenzo.com</a></li>
+                    <li><i class="fa-solid fa-globe"></i> <a href="https://expenzo.example">expenzo.example</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container-lg">
+                <div class="copyright">© <span id="year"></span> Expenzo, Inc. All rights reserved.</div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+
 </body>
 
 </html>

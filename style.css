@@ -684,3 +684,251 @@ body {
         min-height: auto;
     }
 }
+
+
+/* Layout helpers */
+
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* CTA */
+
+.expenzo-cta {
+    background: var(--brand);
+    color: #fff;
+}
+
+.cta-inner {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 48px 20px;
+}
+
+.cta-left {
+    flex: 1;
+    max-width: 640px;
+    padding: 10px 0;
+}
+
+.cta-left h2 {
+    font-size: 36px;
+    line-height: 1.05;
+    margin: 0 0 14px;
+    font-weight: 800;
+}
+
+.cta-desc {
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    max-width: 560px;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all .15s ease;
+}
+
+.btn-ghost {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--brand);
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-ghost:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+.btn-solid {
+    background: rgba(7, 36, 34, 0.95);
+    color: #fff;
+    margin-left: 12px;
+}
+
+.btn-solid:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+
+/* Right image */
+
+.cta-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-image {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Footer */
+
+.expenzo-footer {
+    background: var(--footer-bg);
+    padding-top: 36px;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    color: #0f2a2a;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 160px 160px 220px;
+    gap: 28px;
+    align-items: start;
+    padding: 40px 20px;
+}
+
+.footer-brand .logo {
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--brand-dark);
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    color: var(--muted);
+    max-width: 320px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.socials a {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--brand);
+    text-decoration: none;
+    margin-right: 8px;
+    box-shadow: 0 6px 18px rgba(15, 34, 34, 0.06);
+}
+
+.footer-col h4 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    color: #0f2a2a;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-list li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 12px 20px;
+    background: var(--footer-bg);
+}
+
+.footer-bottom .container-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.legal-links a {
+    color: var(--muted);
+    margin-left: 18px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .cta-inner {
+        flex-direction: column-reverse;
+        padding: 36px 16px;
+    }
+    .cta-left {
+        text-align: center;
+    }
+    .cta-right {
+        width: 100%;
+    }
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .footer-col {
+        margin-top: 8px;
+    }
+    .cta-left h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:520px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+    .cta-left h2 {
+        font-size: 22px;
+    }
+    .cta-desc {
+        font-size: 0.95rem;
+    }
+    .cta-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-solid {
+        margin-left: 0;
+    }
+}
