@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenzo AI Assistant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-title">
+                <h1>Expenzo AI Assistant</h1>
+                <div class="bot-status">
+                    <div class="status-indicator"></div>
+                    <span>Online & Analyzing</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+            </div>
+        </header>
+
+        <!-- CHAT MESSAGES -->
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="avatar">E</div>
+                <div class="message-bubble">
+                    👋 Hello! I’m <strong>Expenzo</strong> — your AI finance assistant. I can help you track spending, plan your budget, and make smart financial choices. How can I assist you today?
+                </div>
+            </div>
+        </div>
+
+        <!-- TYPING INDICATOR -->
+        <div class="typing-indicator">
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <!-- INPUT AREA -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input type="text" class="message-input" placeholder="Ask about your expenses, savings or AI budget plan..." aria-label="Message input">
+                <div class="action-buttons">
+                    <button class="action-button" aria-label="Add attachment">
+            <i class="fas fa-paperclip"></i>
+          </button>
+                    <button class="action-button" aria-label="Voice input">
+            <i class="fas fa-microphone"></i>
+          </button>
+                    <button class="send-button">
+            <span>Send</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+
+</html>
